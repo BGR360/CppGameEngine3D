@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Core::GameObject" Collapsed="true">
+    <Position X="12.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAIAAAAAEAkCBAAAAACAACAAAIAgAAAAAIEAQA=</HashCode>
+      <FileName>src\core\GameObject.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Core::GameComponent" Collapsed="true">
+    <Position X="5.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAFAAAAAAAgAAAAAAAAAAAAiAAAAAACAAAEAAA=</HashCode>
+      <FileName>src\core\GameObject.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Core::Transform" Collapsed="true">
+    <Position X="15.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAIIAAACAAACAAAAAAAAQCCAAgqAACgAACAAFAAIA=</HashCode>
+      <FileName>src\core\Transform.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Core::Component::RenderingComponent" Collapsed="true">
+    <Position X="5.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>src\core\component\renderingcomponent.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Rendering::Mesh" Collapsed="true">
+    <Position X="14" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAEAAAAAEEAQAAAABAEAAAAAAQAAAEAAAAI=</HashCode>
+      <FileName>src\rendering\Mesh.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Rendering::MeshRenderer" Collapsed="true">
+    <Position X="5.5" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAMAAAAAEAQAAAAAAIAAAIAAABUAAA=</HashCode>
+      <FileName>src\rendering\meshrenderer.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Rendering::RenderingEngine" Collapsed="true">
+    <Position X="14" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAIAAAAAIAAABBCEAAAAIAAAIIAAABAAAAAAAAIA=</HashCode>
+      <FileName>src\rendering\renderingengine.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Rendering::Shader" Collapsed="true">
+    <Position X="17.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAIEAAAAAAAQAAAEAAAEAAAAAAAAIABADAAAAAAAA=</HashCode>
+      <FileName>src\rendering\shader.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Rendering::ShaderProgram" Collapsed="true">
+    <Position X="12.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAIAAAIAAAAIEAAAAgEJAMAAAAAIIAABBAABAAkA=</HashCode>
+      <FileName>src\rendering\shaderprogram.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Rendering::OpenGLWidget" Collapsed="true">
+    <Position X="17.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAAAAABCQAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>src\rendering\window\OpenGLWidget.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Rendering::OpenGLWindow" Collapsed="true">
+    <Position X="2.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAABCAAACAAAAAAAAAAAIAAAAAEAAQ=</HashCode>
+      <FileName>src\rendering\window\OpenGLWindow.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Rendering::SDLWindow" Collapsed="true">
+    <Position X="0.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAACAgAAAAAAAAAAIAAIAAAQAAAAI=</HashCode>
+      <FileName>src\rendering\window\SDLWindow.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Rendering::Window" Collapsed="true">
+    <Position X="1.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>UAEABAAAAAAAAAABACAAAAAAAQAAQADEAIAECAAAAAA=</HashCode>
+      <FileName>src\rendering\window\Window.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Math::RandomGenerator" Collapsed="true">
+    <Position X="12.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAABAAAAAAAgAAwAAYAABAAgQAAEAAAAAAAAA=</HashCode>
+      <FileName>src\math\RandomGenerator.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Resources::ObjFile" Collapsed="true">
+    <Position X="15.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAEAgAAAAEAACAAAAEgACAAQIAAAJAAACgAAAA=</HashCode>
+      <FileName>src\resources\ObjFile.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Resources::ResourceManager" Collapsed="true">
+    <Position X="15.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAACABAAAAogAARQAEAACAIABAACAAQAAAABISRg=</HashCode>
+      <FileName>src\resources\ResourceManager.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Exceptions::BengineException" Collapsed="true">
+    <Position X="5.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAABAACAQAAAAAAAAAAAAAAAAAAAAAAAAAAAACA=</HashCode>
+      <FileName>src\exceptions\BengineException.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Exceptions::FileException" Collapsed="true">
+    <Position X="0.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAGAAAAAAAAAAAAIAAAAAAAAABAAAAAAACA=</HashCode>
+      <FileName>src\exceptions\FileException.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Exceptions::FileNotFoundException" Collapsed="true">
+    <Position X="3" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAAAAAAACAAAAAAAEAABAAAAAAACA=</HashCode>
+      <FileName>src\exceptions\FileNotFoundException.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Exceptions::InvalidOperationException" Collapsed="true">
+    <Position X="5.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAIAACAgAAAAAAAAQAAAAAAAAAAAEAAAAAAACA=</HashCode>
+      <FileName>src\exceptions\InvalidOperationException.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Exceptions::OpenGLException" Collapsed="true">
+    <Position X="8.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAAAAAAAAEAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>src\exceptions\OpenGLException.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Exceptions::ShaderCompilingException" Collapsed="true">
+    <Position X="7.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAACQAAAAAEAAIAAAAAAAAAAAEAAAAAAAACA=</HashCode>
+      <FileName>src\exceptions\ShaderCompilingException.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Exceptions::ShaderLinkingException" Collapsed="true">
+    <Position X="9.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAACAAAIAAAAAIAAAAAAAAAAAAAAAAEAAASA=</HashCode>
+      <FileName>src\exceptions\ShaderLinkingException.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="Quaternion" Collapsed="true">
+    <Position X="12.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAhgAQAQAAA=</HashCode>
+      <FileName>src\math\Quaternion.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Math::Vector2" Collapsed="true">
+    <Position X="14" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAARAAAAAAAIAQAAAAAAAAAAAQBgAAAAAAA=</HashCode>
+      <FileName>src\math\Vector2.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Math::Vector3" Collapsed="true">
+    <Position X="15.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAQAAAAAAAIAQAAAAAAAIAAAQBgAQAAAAA=</HashCode>
+      <FileName>src\math\Vector3.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Math::Matrix2x2" Collapsed="true">
+    <Position X="12.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAAAAAQgAECIAAAgAAACAAAAGAAEAA=</HashCode>
+      <FileName>src\math\Matrix2x2.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Math::Matrix3x3" Collapsed="true">
+    <Position X="14" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAAAgAAAAAQ+AECIAAAwMACCAAAgGABFAA=</HashCode>
+      <FileName>src\math\Matrix3x3.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Resources::ObjVertex" Collapsed="true">
+    <Position X="17.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAQA=</HashCode>
+      <FileName>src\resources\ObjFile.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Resources::ObjFace" Collapsed="true">
+    <Position X="15.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>src\resources\ObjFile.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Typedef Name="uint" Collapsed="true">
+    <Position X="12.25" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>src\util\Types.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

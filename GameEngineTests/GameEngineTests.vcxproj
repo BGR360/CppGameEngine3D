@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\gtest-all.cc" />
+    <ClCompile Include="src\mainTest.cpp" />
+    <ClCompile Include="src\tests\ClockTests.cpp" />
+    <ClCompile Include="src\tests\ExceptionTests.cpp" />
+    <ClCompile Include="src\tests\GameObjectTests.cpp" />
+    <ClCompile Include="src\tests\math\Matrix2x2Tests.cpp" />
+    <ClCompile Include="src\tests\math\Matrix3x3Tests.cpp" />
+    <ClCompile Include="src\tests\math\Matrix4x4Tests.cpp" />
+    <ClCompile Include="src\tests\math\RandomTests.cpp" />
+    <ClCompile Include="src\tests\math\Vector2Tests.cpp" />
+    <ClCompile Include="src\tests\math\Vector3Tests.cpp" />
+    <ClCompile Include="src\tests\rendering\MeshRendererTests.cpp" />
+    <ClCompile Include="src\tests\rendering\MeshTests.cpp" />
+    <ClCompile Include="src\tests\rendering\ObjFileTests.cpp" />
+    <ClCompile Include="src\tests\rendering\RenderingEngineTests.cpp" />
+    <ClCompile Include="src\tests\rendering\ShaderTests.cpp" />
+    <ClCompile Include="src\tests\ResourceManagerTests.cpp" />
+    <ClCompile Include="src\tests\TransformTests.cpp" />
+    <ClCompile Include="src\tests\util\FileSystemTests.cpp" />
+    <ClCompile Include="src\tests\util\StringFunctionsTests.cpp" />
+    <ClCompile Include="src\tests\window\OpenGLWindowTests.cpp" />
+    <ClCompile Include="src\tests\window\SDLWindowTests.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\Testing.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{FAAABC71-0487-4B17-8E59-EC2F743624E3}</ProjectGuid>
+    <RootNamespace>GameEngineTests</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(ProjectDir)\..\GameEngine\include\qt;$(ProjectDir)\src;$(ProjectDir)\..\GameEngine\include;$(ProjectDir)\..\GameEngine\src;$(ProjectDir)\include</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>GAMEENGINE_TESTING;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DisableSpecificWarnings>4251</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>Qt5Cored.lib;Qt5Guid.lib;glew32.lib;opengl32.lib;GameEngine.lib;Qt5Testd.lib;Qt5Cored.lib;Qt5Widgetsd.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(ProjectDir)..\GameEngine\lib;$(SolutionDir)$(Configuration)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(ProjectDir)\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

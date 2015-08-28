@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{5cdc96bb-cac3-4fc1-a40a-3f258ff7feff}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\mainGame.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TestScene.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\TestMeshRenderer.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\TestComponent.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\TestScene.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\TestRenderingEngine.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PositionComponent.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\TestSceneLoader.h">
+      <Filter>src</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

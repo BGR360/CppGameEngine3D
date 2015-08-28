@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<game name = "New Game" version = "1.0">
+  <systems></systems>
+  <scenes>
+    <scene name="Scene" id="0" src="C:/Users/BGR/Documents/Visual Studio 2013/Projects/GameEngine/TestGame/res/otherGame/scenes/Default Scene.xml"/>
+    <default>0</default>
+  </scenes>
+  <editor>
+    <activeScene>0</activeScene>
+  </editor>
+</game>

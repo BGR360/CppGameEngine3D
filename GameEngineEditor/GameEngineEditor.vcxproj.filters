@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{bd43903f-2af2-4f5c-91c2-4b98fc0ea049}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\widgets">
+      <UniqueIdentifier>{7ec328a4-b9a3-49ac-b86b-b7a730b10b73}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modelview">
+      <UniqueIdentifier>{d0998bee-d3b2-4751-9d7d-a811430bdcc5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\widgets\gameobjectediting">
+      <UniqueIdentifier>{269d3824-e026-41bc-a443-2ff1a2259151}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\widgets\gameobjectediting\componentediting">
+      <UniqueIdentifier>{64955cad-fd1a-4c26-93bc-a98e0cd2e391}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\BengineEditor.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\widgets\GameObjectHierarchy\GameObjectHierarchyWidget.cpp">
+      <Filter>src\widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="src\widgets\ResourceExplorer\ResourceExplorerWidget.cpp">
+      <Filter>src\widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="src\BengineEditor_moc.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\widgets\ActionButton\ActionButton.cpp">
+      <Filter>src\widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="src\widgets\GameSelect\GameSelectDialog.cpp">
+      <Filter>src\widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="src\widgets\GameSelect\GameSelectDialog_moc.cpp">
+      <Filter>src\widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="src\widgets\GameSelect\DefaultFileContents.cpp">
+      <Filter>src\widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modelview\SceneGraphModel.cpp">
+      <Filter>src\modelview</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modelview\EditorSceneLoader.cpp">
+      <Filter>src\modelview</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ModelTest.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ModelTest_moc.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\EditorComponent.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\widgets\SceneView\SceneViewWidget.cpp">
+      <Filter>src\widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="src\widgets\FloatingPointSlider\floatingpointslider.cpp">
+      <Filter>src\widgets\gameobjectediting</Filter>
+    </ClCompile>
+    <ClCompile Include="src\widgets\FloatingPointSlider\moc_floatingpointslider.cpp">
+      <Filter>src\widgets\gameobjectediting</Filter>
+    </ClCompile>
+    <ClCompile Include="src\widgets\FloatingPointLineEdit\floatingpointlineedit.cpp">
+      <Filter>src\widgets\gameobjectediting</Filter>
+    </ClCompile>
+    <ClCompile Include="src\widgets\FloatingPointLineEdit\floatvalidator.cpp">
+      <Filter>src\widgets\gameobjectediting</Filter>
+    </ClCompile>
+    <ClCompile Include="src\widgets\FloatingPointLineEdit\moc_floatingpointlineedit.cpp">
+      <Filter>src\widgets\gameobjectediting</Filter>
+    </ClCompile>
+    <ClCompile Include="src\widgets\FloatingPointLineEdit\moc_floatvalidator.cpp">
+      <Filter>src\widgets\gameobjectediting</Filter>
+    </ClCompile>
+    <ClCompile Include="src\widgets\FloatBoxEdit\floatboxedit.cpp">
+      <Filter>src\widgets\gameobjectediting</Filter>
+    </ClCompile>
+    <ClCompile Include="src\widgets\FloatBoxEdit\moc_floatboxedit.cpp">
+      <Filter>src\widgets\gameobjectediting</Filter>
+    </ClCompile>
+    <ClCompile Include="src\widgets\Vector3Edit\Vector3Edit.cpp">
+      <Filter>src\widgets\gameobjectediting\componentediting</Filter>
+    </ClCompile>
+    <ClCompile Include="src\widgets\Vector3Edit\Vector3Edit_moc.cpp">
+      <Filter>src\widgets\gameobjectediting\componentediting</Filter>
+    </ClCompile>
+    <ClCompile Include="src\widgets\TransformEdit\TransformEdit.cpp">
+      <Filter>src\widgets\gameobjectediting\componentediting</Filter>
+    </ClCompile>
+    <ClCompile Include="src\widgets\TransformEdit\TransformEdit_moc.cpp">
+      <Filter>src\widgets\gameobjectediting\componentediting</Filter>
+    </ClCompile>
+    <ClCompile Include="src\widgets\SceneView\SceneViewWidget_moc.cpp">
+      <Filter>src\widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="src\widgets\GameObjectEditDialog\GameObjectEditDialog.cpp">
+      <Filter>src\widgets\gameobjectediting</Filter>
+    </ClCompile>
+    <ClCompile Include="src\widgets\GameObjectEditDialog\GameObjectEditDialog_moc.cpp">
+      <Filter>src\widgets\gameobjectediting</Filter>
+    </ClCompile>
+    <ClCompile Include="src\widgets\GameObjectHierarchy\GameObjectHierarchyWidget_moc.cpp">
+      <Filter>src\widgets</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\BengineEditor.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\BengineEditor_ui.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\widgets\GameObjectHierarchy\GameObjectHierarchyWidget.h">
+      <Filter>src\widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="src\widgets\GameObjectHierarchy\GameObjectHierarchyWidget_ui.h">
+      <Filter>src\widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="src\widgets\ResourceExplorer\ResourceExplorerWidget.h">
+      <Filter>src\widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="src\widgets\ResourceExplorer\ResourceExplorerWidget_ui.h">
+      <Filter>src\widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="src\BengineEditor_act.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\widgets\ActionButton\ActionButton.h">
+      <Filter>src\widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="src\widgets\GameSelect\GameSelectDialog.h">
+      <Filter>src\widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="src\widgets\GameSelect\GameSelectDialog_ui.h">
+      <Filter>src\widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modelview\SceneGraphModel.h">
+      <Filter>src\modelview</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modelview\GameObjectItem.h">
+      <Filter>src\modelview</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modelview\EditorSceneLoader.h">
+      <Filter>src\modelview</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modelview\EditorScene.h">
+      <Filter>src\modelview</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ModelTest.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\EditorComponent.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\widgets\SceneView\SceneViewWidget.h">
+      <Filter>src\widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="src\widgets\FloatingPointSlider\floatingpointslider.h">
+      <Filter>src\widgets\gameobjectediting</Filter>
+    </ClInclude>
+    <ClInclude Include="src\widgets\FloatingPointLineEdit\floatingpointlineedit.h">
+      <Filter>src\widgets\gameobjectediting</Filter>
+    </ClInclude>
+    <ClInclude Include="src\widgets\FloatingPointLineEdit\floatvalidator.h">
+      <Filter>src\widgets\gameobjectediting</Filter>
+    </ClInclude>
+    <ClInclude Include="src\widgets\FloatBoxEdit\floatboxedit.h">
+      <Filter>src\widgets\gameobjectediting</Filter>
+    </ClInclude>
+    <ClInclude Include="src\widgets\TransformEdit\TransformEdit.h">
+      <Filter>src\widgets\gameobjectediting\componentediting</Filter>
+    </ClInclude>
+    <ClInclude Include="src\widgets\Vector3Edit\Vector3Edit.h">
+      <Filter>src\widgets\gameobjectediting\componentediting</Filter>
+    </ClInclude>
+    <ClInclude Include="src\widgets\GameObjectEditDialog\GameObjectEditDialog.h">
+      <Filter>src\widgets\gameobjectediting</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE scene>
+<scene name="Test Scene" version="1.0">
+  <resources>
+    <shaders>
+      <shader name="Test Shader" src="C:/Users/BGR/Documents/Visual Studio 2013/Projects/GameEngine/TestGame/res/shaders/testShader"/>
+    </shaders>
+    <meshes>
+      <mesh name="Cube" src="C:/Users/BGR/Documents/Visual Studio 2013/Projects/GameEngine/TestGame/res/meshes/testCube.obj"/>
+      <mesh name="Monkey" src="C:/Users/BGR/Documents/Visual Studio 2013/Projects/GameEngine/TestGame/res/meshes/monkey.obj"/>
+      <mesh name="Watch Tower" src="C:/Users/BGR/Documents/Visual Studio 2013/Projects/GameEngine/TestGame/res/meshes/WatchTower.obj"/>
+      <mesh name="Farmhouse" src="C:/Users/BGR/Documents/Visual Studio 2013/Projects/GameEngine/TestGame/res/meshes/Farmhouse.obj"/>
+      <mesh name="Cylinder" src="C:/Users/BGR/Documents/Visual Studio 2013/Projects/GameEngine/TestGame/res/meshes/cylinder.obj"/>
+    </meshes>
+    <images>
+      <image name="bricks.jpg" src="C:/Users/BGR/Documents/Visual Studio 2013/Projects/GameEngine/TestGame/res/images/bricks.jpg"/>
+      <image name="cobblestone.jpg" src="C:/Users/BGR/Documents/Visual Studio 2013/Projects/GameEngine/TestGame/res/images/cobblestone.jpg"/>
+      <image name="greenMarble.jpg" src="C:/Users/BGR/Documents/Visual Studio 2013/Projects/GameEngine/TestGame/res/images/greenMarble.jpg"/>
+    </images>
+    <textures>
+      <texture name="Bricks" image="bricks.jpg"/>
+      <texture name="Cobblestone" image="cobblestone.jpg"/>
+      <texture name="Green Marble" image="greenMarble.jpg"/>
+    </textures>
+	<materials>
+	  <material name="Bricks" shader="Test Shader" texture="Bricks"/>
+	  <material name="Cobblestone" shader="Test Shader" texture="Cobblestone"/>
+	  <material name="Green Marble" shader="Test Shader" texture="Green Marble"/>
+	</materials>
+  </resources>
+
+  <camera>
+    <position>
+      <x>0.0</x>
+      <y>0.0</y>
+      <z>0.0</z>
+    </position>
+    <forward>
+      <x>0.0</x>
+      <y>0.0</y>
+      <z>-1.0</z>
+    </forward>
+    <up>
+      <x>0.0</x>
+      <y>1.0</y>
+      <z>0.0</z>
+    </up>
+    <fov>120</fov>
+    <near>0.1</near>
+    <far>100.0</far>
+  </camera>
+
+  <gameObject name="Root">
+    <transform>
+      <position>
+        <x>0.0</x>
+        <y>0.0</y>
+        <z>0.0</z>
+      </position>
+      <rotation>
+        <x>0.0</x>
+        <y>0.0</y>
+        <z>0.0</z>
+      </rotation>
+      <scale>
+        <x>1.0</x>
+        <y>1.0</y>
+        <z>1.0</z>
+      </scale>
+    </transform>
+    <components/>
+    <children>
+
+      <gameObject name="Game Controller" id="0">
+        <transform>
+          <position>
+            <x>0.0</x>
+            <y>0.0</y>
+            <z>0.0</z>
+          </position>
+          <rotation>
+            <x>0.0</x>
+            <y>0.0</y>
+            <z>0.0</z>
+          </rotation>
+          <scale>
+            <x>1.0</x>
+            <y>1.0</y>
+            <z>1.0</z>
+          </scale>
+        </transform>
+        <components>
+          <component type="TestComponent"/>
+        </components>
+      </gameObject>
+
+      <gameObject name="Monkey" id="1">
+        <transform>
+          <position>
+            <x>-0.5</x>
+            <y>0.0</y>
+            <z>-4.5</z>
+          </position>
+          <rotation>
+            <x>0.0</x>
+            <y>0.0</y>
+            <z>0.0</z>
+          </rotation>
+          <scale>
+            <x>1.0</x>
+            <y>1.0</y>
+            <z>1.0</z>
+          </scale>
+        </transform>
+        <components>
+          <component type="MeshRenderer">
+            <mesh>Monkey</mesh>
+            <material>Green Marble</material>
+          </component>
+        </components>
+        <children/>
+      </gameObject>
+
+      <gameObject name="Watch Tower" id="2">
+        <transform>
+          <position>
+            <x>-4</x>
+            <y>0.0</y>
+            <z>-4.5</z>
+          </position>
+          <rotation>
+            <x>0.0</x>
+            <y>0.0</y>
+            <z>0.0</z>
+          </rotation>
+          <scale>
+            <x>0.75</x>
+            <y>0.75</y>
+            <z>0.75</z>
+          </scale>
+        </transform>
+        <components>
+          <component type="MeshRenderer">
+            <mesh>Watch Tower</mesh>
+            <material>Bricks</material>
+          </component>
+        </components>
+        <children/>
+      </gameObject>
+
+      <gameObject name="Cube1" id="3">
+        <transform>
+          <position>
+            <x>1.35</x>
+            <y>0.0</y>
+            <z>-3.0</z>
+          </position>
+          <rotation>
+            <x>0.0</x>
+            <y>0.0</y>
+            <z>0.0</z>
+          </rotation>
+          <scale>
+            <x>1.0</x>
+            <y>1.0</y>
+            <z>1.0</z>
+          </scale>
+        </transform>
+        <components>
+          <component type="MeshRenderer">
+            <mesh>Cube</mesh>
+            <material>Cobblestone</material>
+          </component>
+        </components>
+        <children/>
+      </gameObject>
+
+      <gameObject name="Cube2" id="4">
+        <transform>
+          <position>
+            <x>0.0</x>
+            <y>0.0</y>
+            <z>3.2</z>
+          </position>
+          <rotation>
+            <x>0.0</x>
+            <y>0.0</y>
+            <z>0.0</z>
+          </rotation>
+          <scale>
+            <x>1.0</x>
+            <y>1.0</y>
+            <z>1.0</z>
+          </scale>
+        </transform>
+        <components>
+          <component type="MeshRenderer">
+            <mesh>Cube</mesh>
+            <material>Cobblestone</material>
+          </component>
+        </components>
+        <children/>
+      </gameObject>
+
+      <gameObject name="Cube3" id="5">
+        <transform>
+          <position>
+            <x>-4.0</x>
+            <y>0.5</y>
+            <z>0.0</z>
+          </position>
+          <rotation>
+            <x>0.0</x>
+            <y>0.0</y>
+            <z>0.0</z>
+          </rotation>
+          <scale>
+            <x>1.0</x>
+            <y>1.0</y>
+            <z>1.0</z>
+          </scale>
+        </transform>
+        <components>
+          <component type="MeshRenderer">
+            <mesh>Cube</mesh>
+            <material>Cobblestone</material>
+          </component>
+        </components>
+        <children/>
+      </gameObject>
+
+      <gameObject name="Cylinder" id="6">
+        <transform>
+          <position>
+            <x>2.0</x>
+            <y>0.0</y>
+            <z>0.0</z>
+          </position>
+          <rotation>
+            <x>0.0</x>
+            <y>0.0</y>
+            <z>0.0</z>
+          </rotation>
+          <scale>
+            <x>0.8</x>
+            <y>0.8</y>
+            <z>0.8</z>
+          </scale>
+        </transform>
+        <components>
+          <component type="MeshRenderer">
+            <mesh>Cylinder</mesh>
+            <material>Green Marble</material>
+          </component>
+        </components>
+        <children/>
+      </gameObject>
+
+    </children>
+  </gameObject>
+</scene>

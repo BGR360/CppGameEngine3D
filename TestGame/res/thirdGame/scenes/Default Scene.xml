@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<scene name="Default Scene" version="1.0">
+  <resources>
+    <shaders></shaders>
+    <meshes></meshes>
+    <images></images>
+    <textures></textures>
+  </resources>
+  <camera>
+    <position>
+      <x>0.0</x>
+      <y>0.0</y>
+      <z>0.0</z>
+    </position>
+    <forward>
+      <x>0.0</x>
+      <y>0.0</y>
+      <z>-1.0</z>
+    </forward>
+    <up>
+      <x>0.0</x>
+      <y>1.0</y>
+      <z>0.0</z>
+    </up>
+    <fov>120</fov>
+    <near>0.1</near>
+    <far>100.0</far>
+  </camera>
+  <gameObject name="Root">
+    <transform>
+      <position>
+        <x>0.0</x>
+        <y>0.0</y>
+        <z>0.0</z>
+      </position>
+      <rotation>
+        <x>0.0</x>
+        <y>0.0</y>
+        <z>0.0</z>
+      </rotation>
+      <scale>
+        <x>1.0</x>
+        <y>1.0</y>
+        <z>1.0</z>
+      </scale>
+    </transform>
+    <components/>
+    <children>
+    </children>
+  </gameObject>
+</scene>

@@ -1,0 +1,14 @@
+<?xml version ="1.0" encoding="utf-8"?>
+<game name="Test Game" version="1.0">
+  <systems>
+    <renderingEngine type="OpenGLRenderingEngine"/>
+  </systems>
+  <scenes>
+    <scene name="Test Scene" id="0" src="C:/Users/BGR/Documents/Visual Studio 2013/Projects/GameEngine/TestGame/res/game/scenes/testScene.xml"/>
+    <scene name="House Scene" id="1" src="C:/Users/BGR/Documents/Visual Studio 2013/Projects/GameEngine/TestGame/res/game/scenes/houseScene.xml"/>
+    <default>0</default>
+  </scenes>
+  <editor>
+    <activeScene>0</activeScene>
+  </editor>
+</game>

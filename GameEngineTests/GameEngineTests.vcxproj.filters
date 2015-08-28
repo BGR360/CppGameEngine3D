@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="src\gtest-all.cc" />
+    <ClCompile Include="src\tests\GameObjectTests.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tests\TransformTests.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tests\math\RandomTests.cpp">
+      <Filter>tests\math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tests\math\Vector2Tests.cpp">
+      <Filter>tests\math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tests\math\Vector3Tests.cpp">
+      <Filter>tests\math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tests\rendering\ObjFileTests.cpp">
+      <Filter>tests\rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tests\ExceptionTests.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tests\util\StringFunctionsTests.cpp">
+      <Filter>tests\util</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tests\rendering\MeshTests.cpp">
+      <Filter>tests\rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tests\window\SDLWindowTests.cpp">
+      <Filter>tests\window</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tests\window\OpenGLWindowTests.cpp">
+      <Filter>tests\window</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tests\rendering\ShaderTests.cpp">
+      <Filter>tests\rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mainTest.cpp" />
+    <ClCompile Include="src\tests\rendering\MeshRendererTests.cpp">
+      <Filter>tests\rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tests\rendering\RenderingEngineTests.cpp">
+      <Filter>tests\rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tests\ResourceManagerTests.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tests\math\Matrix2x2Tests.cpp">
+      <Filter>tests\math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tests\math\Matrix3x3Tests.cpp">
+      <Filter>tests\math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tests\math\Matrix4x4Tests.cpp">
+      <Filter>tests\math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tests\ClockTests.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tests\util\FileSystemTests.cpp">
+      <Filter>tests\util</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="tests">
+      <UniqueIdentifier>{14196574-1293-4054-b94e-f8b56ed4703a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tests\rendering">
+      <UniqueIdentifier>{9be12f8c-60c4-475e-802c-bb0e6b7a9aff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tests\math">
+      <UniqueIdentifier>{d791de5c-8ef5-4db2-83e8-d3de72828a52}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tests\window">
+      <UniqueIdentifier>{05d51243-0075-4343-b627-e6ca38668886}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tests\util">
+      <UniqueIdentifier>{61efd11e-480c-4f2e-ad24-2834257b9565}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\Testing.h" />
+  </ItemGroup>
+</Project>

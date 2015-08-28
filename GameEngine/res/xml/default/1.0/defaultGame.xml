@@ -1,0 +1,10 @@
+<game name="Bengine Game" version="1.0">
+  <systems></systems>
+  <scenes>
+    <scene name="Scene" id="0" src="./res/game/scenes/Scene.xml"/>
+    <default>0</default>
+  </scenes>
+  <editor>
+    <activeScene>0</activeScene>
+  </editor>
+</game>

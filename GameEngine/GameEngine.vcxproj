@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DLL|Win32">
+      <Configuration>DLL</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\core\Game.cpp" />
+    <ClCompile Include="src\core\GameClock.cpp" />
+    <ClCompile Include="src\core\GameObject.cpp" />
+    <ClCompile Include="src\core\Scene.cpp" />
+    <ClCompile Include="src\exceptions\ShaderCompilingException.cpp" />
+    <ClCompile Include="src\exceptions\ShaderLinkingException.cpp" />
+    <ClCompile Include="src\input\InputManager.cpp" />
+    <ClCompile Include="src\math\Math.cpp" />
+    <ClCompile Include="src\math\RandomGenerator.cpp" />
+    <ClCompile Include="src\rendering\Material.cpp" />
+    <ClCompile Include="src\rendering\MeshRenderer.cpp" />
+    <ClCompile Include="src\rendering\OpenGL.cpp" />
+    <ClCompile Include="src\rendering\OpenGLMesh.cpp" />
+    <ClCompile Include="src\rendering\RenderingEngine.cpp" />
+    <ClCompile Include="src\rendering\Shader.cpp" />
+    <ClCompile Include="src\rendering\ShaderProgram.cpp" />
+    <ClCompile Include="src\rendering\Texture.cpp" />
+    <ClCompile Include="src\rendering\UniformVariable.cpp" />
+    <ClCompile Include="src\rendering\window\OpenGLWidget.cpp" />
+    <ClCompile Include="src\rendering\window\OpenGLWindow.cpp" />
+    <ClCompile Include="src\rendering\window\SDLWindow.cpp" />
+    <ClCompile Include="src\rendering\window\Window.cpp" />
+    <ClCompile Include="src\resources\ObjFile.cpp" />
+    <ClCompile Include="src\resources\ResourceManager.cpp" />
+    <ClCompile Include="src\util\filesys\FileSystem.cpp" />
+    <ClCompile Include="src\util\GameUpdater.cpp" />
+    <ClCompile Include="src\util\GameUpdater_moc.cpp" />
+    <ClCompile Include="src\util\SceneLoader.cpp" />
+    <ClCompile Include="src\util\StringFunctions.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\core\component\RenderingComponent.h" />
+    <ClInclude Include="src\core\Game.h" />
+    <ClInclude Include="src\core\GameClock.h" />
+    <ClInclude Include="src\core\GameObject.h" />
+    <ClInclude Include="src\core\Scene.h" />
+    <ClInclude Include="src\core\Transform.h" />
+    <ClInclude Include="src\Engine.h" />
+    <ClInclude Include="src\exceptions\BengineException.h" />
+    <ClInclude Include="src\exceptions\FileException.h" />
+    <ClInclude Include="src\exceptions\FileNotFoundException.h" />
+    <ClInclude Include="src\exceptions\InvalidOperationException.h" />
+    <ClInclude Include="src\exceptions\OpenGLException.h" />
+    <ClInclude Include="src\exceptions\ShaderCompilingException.h" />
+    <ClInclude Include="src\exceptions\ShaderLinkingException.h" />
+    <ClInclude Include="src\input\InputManager.h" />
+    <ClInclude Include="src\math\Math.h" />
+    <ClInclude Include="src\math\Matrix2x2.h" />
+    <ClInclude Include="src\math\Matrix3x3.h" />
+    <ClInclude Include="src\math\Matrix4x4.h" />
+    <ClInclude Include="src\math\Quaternion.h" />
+    <ClInclude Include="src\math\RandomGenerator.h" />
+    <ClInclude Include="src\math\Vector2.h" />
+    <ClInclude Include="src\math\Vector3.h" />
+    <ClInclude Include="src\math\Vector4.h" />
+    <ClInclude Include="src\rendering\Camera.h" />
+    <ClInclude Include="src\rendering\Material.h" />
+    <ClInclude Include="src\rendering\Mesh.h" />
+    <ClInclude Include="src\rendering\MeshRenderer.h" />
+    <ClInclude Include="src\rendering\OpenGL.h" />
+    <ClInclude Include="src\rendering\OpenGLMesh.h" />
+    <ClInclude Include="src\rendering\RenderingEngine.h" />
+    <ClInclude Include="src\rendering\Shader.h" />
+    <ClInclude Include="src\rendering\ShaderProgram.h" />
+    <ClInclude Include="src\rendering\Texture.h" />
+    <ClInclude Include="src\rendering\UniformVariable.h" />
+    <ClInclude Include="src\rendering\window\OpenGLWidget.h" />
+    <ClInclude Include="src\rendering\window\OpenGLWindow.h" />
+    <ClInclude Include="src\rendering\window\SDLWindow.h" />
+    <ClInclude Include="src\rendering\window\Window.h" />
+    <ClInclude Include="src\resources\Image.h" />
+    <ClInclude Include="src\resources\ObjFile.h" />
+    <ClInclude Include="src\resources\ResourceManager.h" />
+    <ClInclude Include="src\util\filesys\FileSystem.h" />
+    <ClInclude Include="src\util\GameUpdater.h" />
+    <ClInclude Include="src\util\SceneLoader.h" />
+    <ClInclude Include="src\util\SortedArray.h" />
+    <ClInclude Include="src\util\StringFunctions.h" />
+    <ClInclude Include="src\util\Types.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
+    <None Include="src\core\Transform.inl" />
+    <None Include="src\math\Matrix2x2.inl" />
+    <None Include="src\math\Matrix3x3.inl" />
+    <None Include="src\math\Matrix4x4.inl" />
+    <None Include="src\math\Vector2.inl" />
+    <None Include="src\math\Vector3.inl" />
+    <None Include="src\math\Vector4.inl" />
+    <None Include="src\rendering\Camera.inl" />
+    <None Include="src\rendering\UniformVariable.inl" />
+    <None Include="src\resources\ObjFile.inl" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{E9F4299C-5D18-47FF-86B4-14B8B388044F}</ProjectGuid>
+    <RootNamespace>GameEngine</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DLL|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DLL|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DLL|Win32'">
+    <TargetExt>.dll</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <TargetExt>.dll</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <TargetExt>.dll</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(ProjectDir)\include\qt;$(ProjectDir)\include;$(ProjectDir)\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>GAMEENGINE_TESTING;GAMEENGINE_EXPORTING;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DisableSpecificWarnings>4251</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(ProjectDir)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opengl32.lib;glew32.lib;Qt5Cored.lib;Qt5Guid.lib;Qt5OpenGLd.lib;Qt5Widgetsd.lib;SDL2.lib;SDL2main.lib;SDL2test.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DLL|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(ProjectDir)\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

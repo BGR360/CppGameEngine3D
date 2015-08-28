@@ -1,0 +1,307 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="src\core\GameObject.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rendering\window\OpenGLWindow.cpp">
+      <Filter>rendering\window</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rendering\window\SDLWindow.cpp">
+      <Filter>rendering\window</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rendering\window\Window.cpp">
+      <Filter>rendering\window</Filter>
+    </ClCompile>
+    <ClCompile Include="src\math\RandomGenerator.cpp">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\resources\ResourceManager.cpp">
+      <Filter>resources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\resources\ObjFile.cpp">
+      <Filter>resources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\util\StringFunctions.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rendering\window\OpenGLWidget.cpp">
+      <Filter>rendering\window</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rendering\RenderingEngine.cpp">
+      <Filter>rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rendering\Shader.cpp">
+      <Filter>rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="src\exceptions\ShaderCompilingException.cpp">
+      <Filter>exception</Filter>
+    </ClCompile>
+    <ClCompile Include="src\exceptions\ShaderLinkingException.cpp">
+      <Filter>exception</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rendering\ShaderProgram.cpp">
+      <Filter>rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rendering\MeshRenderer.cpp">
+      <Filter>rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="src\math\Math.cpp">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\Game.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\util\GameUpdater_moc.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="src\util\GameUpdater.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\Scene.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\GameClock.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rendering\UniformVariable.cpp">
+      <Filter>rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rendering\OpenGL.cpp">
+      <Filter>rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rendering\Texture.cpp">
+      <Filter>rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="src\util\filesys\FileSystem.cpp">
+      <Filter>util\filesys</Filter>
+    </ClCompile>
+    <ClCompile Include="src\input\InputManager.cpp">
+      <Filter>input</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rendering\OpenGLMesh.cpp">
+      <Filter>rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="src\util\SceneLoader.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rendering\Material.cpp">
+      <Filter>rendering</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\core\GameObject.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\Transform.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\math\Vector3.h">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="src\math\Quaternion.h">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="src\util\Types.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="src\rendering\window\OpenGLWindow.h">
+      <Filter>rendering\window</Filter>
+    </ClInclude>
+    <ClInclude Include="src\rendering\window\SDLWindow.h">
+      <Filter>rendering\window</Filter>
+    </ClInclude>
+    <ClInclude Include="src\rendering\window\Window.h">
+      <Filter>rendering\window</Filter>
+    </ClInclude>
+    <ClInclude Include="src\math\RandomGenerator.h">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine.h" />
+    <ClInclude Include="src\rendering\Mesh.h">
+      <Filter>rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="src\math\Vector2.h">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="src\resources\ResourceManager.h">
+      <Filter>resources</Filter>
+    </ClInclude>
+    <ClInclude Include="src\resources\ObjFile.h">
+      <Filter>resources</Filter>
+    </ClInclude>
+    <ClInclude Include="src\exceptions\BengineException.h">
+      <Filter>exception</Filter>
+    </ClInclude>
+    <ClInclude Include="src\exceptions\FileNotFoundException.h">
+      <Filter>exception</Filter>
+    </ClInclude>
+    <ClInclude Include="src\exceptions\InvalidOperationException.h">
+      <Filter>exception</Filter>
+    </ClInclude>
+    <ClInclude Include="src\exceptions\FileException.h">
+      <Filter>exception</Filter>
+    </ClInclude>
+    <ClInclude Include="src\util\StringFunctions.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="src\rendering\window\OpenGLWidget.h">
+      <Filter>rendering\window</Filter>
+    </ClInclude>
+    <ClInclude Include="src\rendering\RenderingEngine.h">
+      <Filter>rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\component\RenderingComponent.h">
+      <Filter>core\component</Filter>
+    </ClInclude>
+    <ClInclude Include="src\rendering\Shader.h">
+      <Filter>rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="src\exceptions\OpenGLException.h">
+      <Filter>exception</Filter>
+    </ClInclude>
+    <ClInclude Include="src\exceptions\ShaderLinkingException.h">
+      <Filter>exception</Filter>
+    </ClInclude>
+    <ClInclude Include="src\exceptions\ShaderCompilingException.h">
+      <Filter>exception</Filter>
+    </ClInclude>
+    <ClInclude Include="src\rendering\ShaderProgram.h">
+      <Filter>rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="src\rendering\MeshRenderer.h">
+      <Filter>rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="src\math\Matrix2x2.h">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="src\math\Matrix3x3.h">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="src\math\Matrix4x4.h">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="src\math\Vector4.h">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="src\math\Math.h">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="src\rendering\UniformVariable.h">
+      <Filter>rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\Game.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\util\GameUpdater.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\Scene.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\GameClock.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\util\SortedArray.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="src\rendering\OpenGL.h">
+      <Filter>rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="src\resources\Image.h">
+      <Filter>resources</Filter>
+    </ClInclude>
+    <ClInclude Include="src\rendering\Texture.h">
+      <Filter>rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="src\util\filesys\FileSystem.h">
+      <Filter>util\filesys</Filter>
+    </ClInclude>
+    <ClInclude Include="src\input\InputManager.h">
+      <Filter>input</Filter>
+    </ClInclude>
+    <ClInclude Include="src\rendering\Camera.h">
+      <Filter>rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="src\rendering\OpenGLMesh.h">
+      <Filter>rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="src\util\SceneLoader.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="src\rendering\Material.h">
+      <Filter>rendering</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="core">
+      <UniqueIdentifier>{230128f4-d6c2-4301-bb16-13b89973e129}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rendering">
+      <UniqueIdentifier>{c3be9213-09a4-479f-8c3a-23c9352410df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="physics">
+      <UniqueIdentifier>{13f5d037-4bc8-488f-90a6-1a7352d4fb0a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio">
+      <UniqueIdentifier>{16f9cbab-3d9f-44be-b757-f1b593066d26}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="input">
+      <UniqueIdentifier>{1755dc66-6157-4869-9ddc-85adfe560889}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="math">
+      <UniqueIdentifier>{56065d87-acd3-4198-af2d-2e837d3de6f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="util">
+      <UniqueIdentifier>{9ca721fb-1030-4452-b1c0-aa1b1690e133}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rendering\window">
+      <UniqueIdentifier>{a79923a2-ff6f-4eeb-89c6-9d0afb04a4d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resources">
+      <UniqueIdentifier>{66ab14a8-3675-4633-86e2-86e9065d5360}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="exception">
+      <UniqueIdentifier>{05c658f4-05e1-4dc3-aa02-73c920d939b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\component">
+      <UniqueIdentifier>{ec765a6e-827f-4210-91bc-078d6e5f9cdd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="util\filesys">
+      <UniqueIdentifier>{770aed61-e89b-46a1-a13b-174f84725057}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\math\Vector3.inl">
+      <Filter>math</Filter>
+    </None>
+    <None Include="src\core\Transform.inl">
+      <Filter>core</Filter>
+    </None>
+    <None Include="src\math\Vector2.inl">
+      <Filter>math</Filter>
+    </None>
+    <None Include="src\math\Matrix2x2.inl">
+      <Filter>math</Filter>
+    </None>
+    <None Include="src\math\Matrix3x3.inl">
+      <Filter>math</Filter>
+    </None>
+    <None Include="ClassDiagram.cd" />
+    <None Include="src\math\Vector4.inl">
+      <Filter>math</Filter>
+    </None>
+    <None Include="src\math\Matrix4x4.inl">
+      <Filter>math</Filter>
+    </None>
+    <None Include="src\rendering\UniformVariable.inl">
+      <Filter>rendering</Filter>
+    </None>
+    <None Include="src\rendering\Camera.inl">
+      <Filter>rendering</Filter>
+    </None>
+    <None Include="src\resources\ObjFile.inl">
+      <Filter>resources</Filter>
+    </None>
+  </ItemGroup>
+</Project>

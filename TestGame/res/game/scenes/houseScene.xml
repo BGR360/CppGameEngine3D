@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE scene>
+<scene name="House Scene" version="1.0">
+  <resources>
+    <shaders>
+      <shader name="Test Shader" src="C:/Users/BGR/Documents/Visual Studio 2013/Projects/GameEngine/TestGame/res/shaders/testShader"/>
+    </shaders>
+    <meshes>
+      <mesh name="Medieval House" src="C:/Users/BGR/Documents/Visual Studio 2013/Projects/GameEngine/TestGame/res/meshes/med_house_final.obj"/>
+    </meshes>
+    <images>
+      <image name="cobblestone.jpg" src="C:/Users/BGR/Documents/Visual Studio 2013/Projects/GameEngine/TestGame/res/images/cobblestone.jpg"/>
+    </images>
+    <textures>
+      <texture name="Cobblestone" image="cobblestone.jpg"/>
+    </textures>
+	<materials>
+	  <material name="Cobblestone" shader="Test Shader" texture="Cobblestone"/>
+	</materials>
+  </resources>
+
+  <camera>
+    <position>
+      <x>0.0</x>
+      <y>0.0</y>
+      <z>0.0</z>
+    </position>
+    <forward>
+      <x>0.0</x>
+      <y>0.0</y>
+      <z>-1.0</z>
+    </forward>
+    <up>
+      <x>0.0</x>
+      <y>1.0</y>
+      <z>0.0</z>
+    </up>
+    <fov>120</fov>
+    <near>0.1</near>
+    <far>100.0</far>
+  </camera>
+
+  <gameObject name="Root">
+    <transform>
+      <position>
+        <x>0.0</x>
+        <y>0.0</y>
+        <z>0.0</z>
+      </position>
+      <rotation>
+        <x>0.0</x>
+        <y>0.0</y>
+        <z>0.0</z>
+      </rotation>
+      <scale>
+        <x>1.0</x>
+        <y>1.0</y>
+        <z>1.0</z>
+      </scale>
+    </transform>
+    <components/>
+    <children>
+
+      <gameObject name="Game Controller" id="0">
+        <transform>
+          <position>
+            <x>0.0</x>
+            <y>0.0</y>
+            <z>0.0</z>
+          </position>
+          <rotation>
+            <x>0.0</x>
+            <y>0.0</y>
+            <z>0.0</z>
+          </rotation>
+          <scale>
+            <x>1.0</x>
+            <y>1.0</y>
+            <z>1.0</z>
+          </scale>
+        </transform>
+        <components>
+          <component type="TestComponent"/>
+        </components>
+      </gameObject>
+
+      <gameObject name="House" id="1">
+        <transform>
+          <position>
+            <x>0.0</x>
+            <y>0.0</y>
+            <z>-20.0</z>
+          </position>
+          <rotation>
+            <x>-90.0</x>
+            <y>0.0</y>
+            <z>0.0</z>
+          </rotation>
+          <scale>
+            <x>0.1</x>
+            <y>0.1</y>
+            <z>0.1</z>
+          </scale>
+        </transform>
+        <components>
+          <component type="MeshRenderer">
+            <mesh>Medieval House</mesh>
+            <material>Cobblestone</material>
+          </component>
+        </components>
+        <children/>
+      </gameObject>
+
+    </children>
+  </gameObject>
+</scene>
