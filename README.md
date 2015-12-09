@@ -16,8 +16,6 @@ After transitioning from a Windows to a Macbook, I aborted this C++ version of m
 
 I owe many thanks to Jamie King and Benny Bobaganoosh for their great tutorials and learning resources on C++, OpenGL, and Game Engine programming. These guys do great work and you should check them out.
 
-Jamie King: \t[YouTube](https://m.youtube.com/user/1kingja?)
-\t\t[Website](http://www.computersciencevideos.com)
+Jamie King:  [YouTube](https://m.youtube.com/user/1kingja?)  [Website](http://www.computersciencevideos.com)
 
-Bennybox: \t[YouTube](https://m.youtube.com/user/thebennybox?)
-\t\t[GitHub](https://github.com/BennyQBD?tab=repositories)
+Bennybox:  [YouTube](https://m.youtube.com/user/thebennybox?)  [GitHub](https://github.com/BennyQBD?tab=repositories)
