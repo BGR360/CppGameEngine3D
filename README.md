@@ -109,6 +109,10 @@ renderingComp.setMesh(aMesh);
 renderingComp.setMaterial(aMaterial);
 ```
 
+##### Parenting GameObjects
+
+
+
 **See Also:** [GameObject API](GameEngine/src/core/GameObject.h)
 
 #### Resources
@@ -140,6 +144,34 @@ monkey.addComponent(
 **See Also:** [Resources Source Code](GameEngine/src/resources)
 
 #### Rendering
+
+Designing the Rendering Engine was one of the most difficult parts of the whole project. I really struggled with finding my own way to make a robust object-oriented system. What I ended up with definitely worked but was far from elegant (at least in my eyes).
+
+##### RenderingEngine
+
+The `RenderingEngine` class is responsible for rendering the `Game`'s current `Scene`. Each `Scene` has its own `ResourceManager` and root `GameObject`. The `RenderingEngine` traverses through the `GameObject` tree and calls `render()` on any `GameObjects` which have `RenderingComponents`.
+
+The strange thing is that `RenderingEngine` inherits from Qt's `QOpenGLWidget`. This is what throws off much of the system's object-orientedness. I had to do this because of how Qt works with OpenGL. When using Qt, any calls to OpenGL functions *must* occur within the `QOpenGLWidget`'s `paintGL()` function.
+
+##### MeshRenderer
+
+Any `GameObject` which can be rendered has a `RenderingComponent`. Currently, the only known `RenderingComponent` in the Bengine is the `MeshRenderer`. The `MeshRenderer` stores a pointer to a `Mesh` and a `Material`, which is all that it needs to properly render a mesh (because a Material has a pointer to a `ShaderProgram`).
+
+##### Meshes
+
+A `Mesh` is defined by a set of verices, normals, and UV coordinates. `Meshes` are also *indexed* to help save space. Currently, only `.obj` files can be loaded to create `Meshes`. You can view the new-and-improved obj parsing algorithm [here](GameEngine/src/resources/ObjFile.cpp#L305).
+
+##### Shaders and Uniform Variables
+
+The compilation and loading of GLSL Shaders in the Bengine is done through the `Shader` ([.h](GameEngine/src/rendering/Shader.h) [.cpp](GameEngine/src/rendering/Shader.cpp)) and `ShaderProgram` ([.h](GameEngine/src/rendering/ShaderProgram.h) [.cpp](GameEngine/src/rendering/ShaderProgram.cpp)) classes. Just like in OpenGL, a `ShaderProgram` is comprised of multiple `Shaders` at different stages (the Vertex Shader, Fragment Shader, Geometry Shader, etc.).
+
+The system I created for shader uniform variables, I think, was a good one. The whole `UniformVariable` class ([.h](GameEngine/src/rendering/UniformVariable.h) [.inl](GameEngine/src/rendering/UniformVariable.inl) [.cpp](GameEngine/src/rendering/UniformVariable.cpp)) was templated so that different datatypes could specify how they are `bind()`ed to the shader program.
+
+One really cool thing is that Uniform Variables are **automatically detected** while parsing the GLSL source code. Seriously, [check it out](GameEngine/src/rendering/ShaderProgram.cpp#L153-L219)!
+
+##### Materials
+
+In the Bengine, a `Material` is defined by a `Texture` and a `ShaderProgram` which is used to render it. The creation of `Materials` is done by the `ResourceManager` (see [here](#resources)).
 
 **See Also:** [Rendering Source Code](GameEngine/src/rendering)
 
