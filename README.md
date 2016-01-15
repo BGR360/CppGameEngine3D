@@ -95,11 +95,47 @@ StaticComponent   MovableComponent                     | - RenderableComponent  
                                                        +------------------------+
 ```
 
-In the Bengine, every `GameObject` has a list of `GameComponents` which can be dynamically assigned. The GameComponents define the GameObject's behavior at runtime by specifying a custom `update()` function.
+In the Bengine, every `GameObject` has a list of `GameComponents` which can be dynamically assigned. The GameComponents define the GameObject's behavior at runtime by specifying a custom `update()` function. For example:
+
+```c++
+// Create GameObject and add Components
+GameObject go;
+go.addComponent(new MeshRenderer);
+go.addComponent(new PhysicsComponent);
+
+// Get Component and modify properties
+MeshRenderer* renderingComp = go.getComponent<MeshRenderer>();
+renderingComp.setMesh(aMesh);
+renderingComp.setMaterial(aMaterial);
+```
 
 **See Also:** [GameObject API](GameEngine/src/core/GameObject.h)
 
 #### Resources
+
+For any game to function well, there needs to be a centralized way to manage the assets (or Resources) in a scene. This is done through the `ResourceManager` class. In hindsight, the design of `ResourceManager` is pretty poor and hardly object-oriented, but it worked.
+
+The `ResourceManager` stores all resource-like object (Images, Textures, Materials, Meshes, Shaders) in maps so that each resource is mapped to a name (a string). To obtain a reference to a resource in-game, call one of the `get()` functions with the name of the resource.
+
+```c++
+// Load resources
+ResourceManager res;
+res.loadMesh("res/meshes/monkey.obj", "monkey");
+res.loadShader("res/shaders/basic_shader.vs", "basic_shader");
+res.loadTexture("res/textures/bricks.jpg", "bricks", 0);
+
+// Create a material
+res.createMaterial("bricks", res.getShader("basic_shader"), res.getTexture("bricks"));
+
+// Create a Monkey GameObject
+GameObject monkey;
+monkey.addComponent(
+    new MeshRenderer(
+        res.getMesh("monkey"),
+        res.getMaterial("bricks")
+    )
+);
+```
 
 **See Also:** [Resources Source Code](GameEngine/src/resources)
 
