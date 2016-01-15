@@ -1,6 +1,6 @@
 # CppGameEngine3D
 
-My first attempt at writing a from-scratch OpenGL game engine in C++
+My first attempt at writing a from-scratch OpenGL game engine in C++, humbly called the "Bengine." The [Qt GUI Framework](http://www.qt.io/) is used extensively to provide OpenGL Widgets and make up the GUI for the Bengine Editor (learn more about the Bengine Editor [here]()). The entire engine was programmed using Test-Driven Development strategies, utilizing the [Google Test Framework](https://github.com/google/googletest) to swiftly implement unit tests (learn more about the Bengine Tests [here]()).
 
 ## Demo Video
 
@@ -24,3 +24,27 @@ I owe many thanks to Jamie King and Benny Bobaganoosh for their great tutorials 
 Jamie King:  [YouTube](https://m.youtube.com/user/1kingja?) -- [Website](http://www.computersciencevideos.com)
 
 Bennybox:  [YouTube](https://m.youtube.com/user/thebennybox?) -- [GitHub](https://github.com/BennyQBD?tab=repositories)
+
+## About the Bengine
+
+### The Core Engine
+
+#### OpenGL
+
+#### Homemade Math Library
+
+#### GameObject API
+
+#### Rendering
+
+### The Editor
+
+#### Qt Framework
+
+#### Data-Driven Design
+
+### The Tests
+
+#### Google Test
+
+#### Believing in Test-Driven Development
