@@ -67,7 +67,7 @@ Access to OpenGL function calls was provided by [GLEW (OpenGL Extension Wrangler
 
 One of the most important things required for a 3D game engine is a solid Vector and Matrix math library so that Matrix-Vector transformations in 3D space can be made easily. All of the common Vector and Matrix operations were coded by hand by me. I'm not going to say it was fun.
 
-See Also: [Math Library Source Code](GameEngine/src/math)
+**See Also:** [Math Library Source Code](GameEngine/src/math)
 
 #### GameObject API
 
@@ -75,7 +75,7 @@ The overall design of the Bengine external API is the GameObject. The GameObject
 
 ##### Composition over Inheritance
 
-Inheritance and polymorphism is great, but it certainly has its limitations, especially in the game world. For instance, you might define a class of objects that is `Movable` and one that is `Static`, and another class of objects that is `Renderable`. The problem is that a `GameObject` (for instance, a `NonPlayerCharacter`) may be `Movable` *and* `Renderable`. This leads to a diamond-shaped inheritance tree, which is a problem.
+Inheritance and polymorphism are great, but they certainly have their limitations, especially in the game world. For instance, you might define a class of objects that is `Movable` and one that is `Static`, and another class of objects that is `Renderable`. The problem is that a `GameObject` (for instance, a `NonPlayerCharacter`) may be `Movable` *and* `Renderable`. This leads to a diamond-shaped inheritance tree, which is a problem.
 
 ```
              GameObject
@@ -164,7 +164,7 @@ Any `GameObject` which can be rendered has a `RenderingComponent`. Currently, th
 
 #### Meshes
 
-A `Mesh` is defined by a set of verices, normals, and UV coordinates. `Meshes` are also *indexed* to help save space. Currently, only `.obj` files can be loaded to create `Meshes`. You can view the new-and-improved obj parsing algorithm [here](GameEngine/src/resources/ObjFile.cpp#L305).
+A `Mesh` is defined by a set of vertices, normals, and UV coordinates. `Meshes` are also *indexed* to help save space. Currently, only `.obj` files can be loaded to create `Meshes`. You can view the new-and-improved obj parsing algorithm [here](GameEngine/src/resources/ObjFile.cpp#L305).
 
 #### Shaders and Uniform Variables
 
