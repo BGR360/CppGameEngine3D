@@ -1,6 +1,4 @@
-## VERSION 2 CURRENTLY UNDER CONSTRUCTION!! :D
-
-See [here](https://github.com/bgr360/Bengine)
+## [VERSION 2](https://github.com/bgr360/Bengine) CURRENTLY UNDER CONSTRUCTION!! :D
 
 # CppGameEngine3D
 
